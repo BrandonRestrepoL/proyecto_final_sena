@@ -1,0 +1,3 @@
+<Context>
+    <Parameter name="org.apache.catalina.STRICT_SERVLET_COMPLIANCE" value="true" override="false"/>
+</Context>

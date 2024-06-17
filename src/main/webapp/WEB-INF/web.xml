@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+  <display-name>Tienda Online</display-name>
+
+  <!-- Configurar la página de inicio -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Mapear el formulario.jsp para que sea accesible -->
+  <servlet>
+    <servlet-name>FormularioServlet</servlet-name>
+    <jsp-file>/formulario.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FormularioServlet</servlet-name>
+    <url-pattern>/formulario</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ProcesarDatosServlet</servlet-name>
+    <servlet-class>com.proyectosena.tiendaonline.ProcesarDatosServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ProcesarDatosServlet</servlet-name>
+    <url-pattern>/registro_usuario</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
