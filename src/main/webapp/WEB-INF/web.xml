@@ -8,13 +8,13 @@
 
   <!-- Configurar la página de inicio -->
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 
-  <!-- Mapear el formulario.jsp para que sea accesible -->
+  <!-- Mapear el formulario.html para que sea accesible -->
   <servlet>
     <servlet-name>FormularioServlet</servlet-name>
-    <jsp-file>/formulario.jsp</jsp-file>
+    <jsp-file>/formulario.html</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>FormularioServlet</servlet-name>
