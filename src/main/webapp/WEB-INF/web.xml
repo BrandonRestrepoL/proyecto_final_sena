@@ -21,11 +21,13 @@
     <url-pattern>/formulario</url-pattern>
   </servlet-mapping>
 
+  <!-- Configuración del servlet para procesar datos de registro de usuarios -->
   <servlet>
     <servlet-name>ProcesarDatosServlet</servlet-name>
     <servlet-class>com.proyectosena.tiendaonline.ProcesarDatosServlet</servlet-class>
   </servlet>
 
+  <!-- Mapeo del servlet para la URL '/registro_usuario' -->
   <servlet-mapping>
     <servlet-name>ProcesarDatosServlet</servlet-name>
     <url-pattern>/registro_usuario</url-pattern>
